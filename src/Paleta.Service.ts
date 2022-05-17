@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 
-export class Paleta {
+@Injectable()
+export class PaletaService {
     paletas: string[]=['Morango','Leite Condensado'];
 
     findAll(): string[]{
